@@ -157,3 +157,4 @@ select.field-input { appearance: none; }
 /* TABS */
 .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 8px 12px; font-size: 13px; color: #6B9C84; cursor: pointer; font-family: inherit; white-space: nowrap; }
 .tab-btn.active { color: #2D6A4F; border-bottom-color: #2D6A4F; font-weight: 500; }
+
