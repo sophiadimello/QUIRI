@@ -1,320 +1,159 @@
-/* ========================================
-   LOGIN DA NUTRICIONISTA
-   ======================================== */
-/* Configuração geral da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-/* Área principal do login */
-.login-container {
-    width: 400px;
-    margin: 80px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Título */
-.login-container h1 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Subtítulo */
-.login-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Formulário */
-#formLogin {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Textos dos campos */
-#formLogin label {
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-/* Campos */
-#formLogin input {
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 15px;
-}
-
-/* Botão */
-#formLogin button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Link de cadastro */
-.login-container p {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* ========================================
-   CADASTRO DA NUTRICIONISTA
-   ======================================== */
-
-/* Área principal do cadastro */
-.cadastro-container {
-    width: 500px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Título QUIRI */
-.cadastro-container h1 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Título do cadastro */
-.cadastro-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Formulário de cadastro */
-#formCadastroNutricionista {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Nome dos campos */
-#formCadastroNutricionista label {
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-/* Campos de preenchimento */
-#formCadastroNutricionista input {
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 15px;
-}
-
-/* Botão de cadastro */
-#formCadastroNutricionista button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Mensagem do cadastro */
-#mensagem {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* ========================================
-   TELA INICIAL - INDEX
-   ======================================== */
-
-.inicio-container {
-    width: 400px;
-    margin: 100px auto;
-    padding: 35px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.inicio-container h1 {
-    margin-bottom: 10px;
-}
-
-.inicio-container h2 {
-    margin-bottom: 15px;
-}
-
-.inicio-container p {
-    margin-bottom: 25px;
-}
-
-.inicio-container button {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-/* ========================================
-   ESCOLHA DO TIPO DE CADASTRO
-   ======================================== */
-
-.cadastro-tipo-container {
-    width: 400px;
-    margin: 100px auto;
-    padding: 35px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.cadastro-tipo-container h1 {
-    margin-bottom: 10px;
-}
-
-.cadastro-tipo-container h2 {
-    margin-bottom: 30px;
-}
-
-.cadastro-tipo-container button {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-/* ========================================
-   CONFIGURAÇÃO GERAL DAS TELAS
-   ======================================== */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-/* ========================================
-   CADASTRO DO PACIENTE
-   ======================================== */
-
-.cadastro-paciente-container {
-    width: 90%;
-    max-width: 420px;
-    margin: 40px auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
-    box-sizing: border-box;
-}
-
-.cadastro-paciente-container h1 {
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.cadastro-paciente-container h2 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.cadastro-paciente-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.cadastro-paciente-container label {
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-.cadastro-paciente-container input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.cadastro-paciente-container input:focus {
-    outline: none;
-    border-color: #777;
-}
-
-.cadastro-paciente-container button {
-    width: 100%;
-    padding: 13px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#mensagemPaciente {
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-.cadastro-paciente-container p:last-child {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-/* ========================================
-   ERRO NOS CAMPOS
-   ======================================== */
-
-.campo-erro {
-    border: 2px solid #d9534f !important;
-}
-
-.mensagem-erro {
-    color: #d9534f;
-    font-size: 14px;
-    margin-top: -10px;
-    margin-bottom: 12px;
-}
-
-
-/* ========================================
-   CELULAR
-   ======================================== */
-
-@media (max-width: 480px) {
-
-    .cadastro-paciente-container {
-        width: 94%;
-        margin: 20px auto;
-        padding: 20px;
-    }
-
-    .cadastro-paciente-container h1 {
-        font-size: 28px;
-    }
-
-    .cadastro-paciente-container h2 {
-        font-size: 21px;
-    }
-
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #e8e0d0; display: flex; justify-content: center; min-height: 100vh; }
+.app { background: #F5EFE0; width: 100%; max-width: 390px; min-height: 100vh; display: flex; flex-direction: column; position: relative; overflow: hidden; }
+ 
+/* TOPBAR */
+.topbar { background: #2D6A4F; color: #F5EFE0; padding: 14px 16px 10px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.topbar-logo { display: flex; align-items: center; gap: 8px; }
+.topbar-logo span { font-size: 22px; font-weight: 600; color: #F5EFE0; }
+.topbar-right { display: flex; gap: 14px; align-items: center; }
+.topbar-right i { font-size: 22px; color: #F5EFE0; cursor: pointer; }
+.topbar-back { background: none; border: none; color: #F5EFE0; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px; text-decoration: none; }
+ 
+/* HERO */
+.hero { background: #2D6A4F; padding: 0 16px 24px; color: #F5EFE0; }
+.hero-greeting { font-size: 13px; opacity: 0.8; margin-bottom: 2px; }
+.hero-name { font-size: 20px; font-weight: 500; }
+.hero-sub { font-size: 12px; opacity: 0.7; margin-top: 2px; }
+.hero-badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 20px; padding: 3px 10px; font-size: 11px; margin-top: 6px; }
+.hero-wave { width: 100%; height: 30px; display: block; flex-shrink: 0; }
+ 
+/* AUTH FORM */
+.auth-hero { background: #2D6A4F; padding: 32px 24px 28px; color: #F5EFE0; text-align: center; }
+.auth-hero-title { font-size: 22px; font-weight: 600; margin-top: 12px; }
+.auth-hero-sub { font-size: 13px; opacity: 0.75; margin-top: 4px; }
+.auth-body { flex: 1; padding: 24px 20px; background: #F5EFE0; overflow-y: auto; }
+.auth-body h2 { font-size: 18px; font-weight: 500; color: #1B4332; margin-bottom: 18px; }
+.field-label { font-size: 12px; color: #6B9C84; margin-bottom: 4px; margin-top: 14px; font-weight: 500; }
+.field-label:first-child { margin-top: 0; }
+.field-input { width: 100%; border: 1px solid #c8dfd4; border-radius: 10px; padding: 10px 12px; font-size: 14px; color: #1B4332; background: #fff; font-family: inherit; outline: none; transition: border-color 0.15s; }
+.field-input:focus { border-color: #2D6A4F; }
+.field-input.error { border-color: #c0625a; }
+.error-msg { font-size: 12px; color: #c0625a; margin-top: 4px; display: none; }
+.error-msg.show { display: block; }
+.btn-green { background: #2D6A4F; color: #F5EFE0; border: none; border-radius: 10px; padding: 12px; font-size: 14px; font-weight: 500; width: 100%; cursor: pointer; margin-top: 18px; font-family: inherit; }
+.btn-green:active { opacity: 0.85; }
+.btn-outline { background: transparent; color: #2D6A4F; border: 1px solid #2D6A4F; border-radius: 10px; padding: 12px; font-size: 14px; font-weight: 500; width: 100%; cursor: pointer; margin-top: 10px; font-family: inherit; }
+.auth-link { text-align: center; margin-top: 16px; font-size: 13px; color: #6B9C84; }
+.auth-link a { color: #2D6A4F; font-weight: 500; cursor: pointer; text-decoration: none; }
+ 
+/* TOAST */
+.toast { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); color: #fff; font-size: 13px; padding: 10px 18px; border-radius: 20px; display: none; white-space: nowrap; z-index: 999; font-family: inherit; }
+.toast.show { display: block; }
+ 
+/* OVERLAY MODAL */
+.overlay { display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.45); z-index: 100; align-items: flex-start; justify-content: center; padding: 60px 16px 20px; overflow-y: auto; }
+.overlay.open { display: flex; }
+.modal-box { background: #fff; border-radius: 18px; padding: 20px 16px 24px; width: 100%; max-width: 340px; position: relative; }
+.modal-box h3 { font-size: 16px; font-weight: 500; color: #1B4332; margin-bottom: 14px; }
+.modal-close { position: absolute; top: 14px; right: 14px; background: none; border: none; font-size: 20px; cursor: pointer; color: #6B9C84; }
+ 
+/* SECTIONS */
+.section { padding: 16px 16px 0; }
+.section-title { font-size: 12px; font-weight: 500; color: #1B4332; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+.content-scroll { flex: 1; overflow-y: auto; padding-bottom: 80px; }
+ 
+/* CARDS */
+.cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+.card { background: #fff; border-radius: 14px; padding: 14px 12px; display: flex; flex-direction: column; gap: 6px; border: 0.5px solid #c8dfd4; cursor: pointer; transition: transform 0.15s; }
+.card:active { transform: scale(0.97); }
+.card-icon { width: 38px; height: 38px; border-radius: 10px; background: #E8F5EE; display: flex; align-items: center; justify-content: center; }
+.card-icon i { font-size: 20px; color: #2D6A4F; }
+.card-label { font-size: 13px; font-weight: 500; color: #1B4332; line-height: 1.3; }
+.card-sub { font-size: 11px; color: #6B9C84; }
+.card-wide { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 14px; }
+.card-wide .card-icon { width: 46px; height: 46px; flex-shrink: 0; }
+.card-wide .card-icon i { font-size: 24px; }
+.card-wide .card-text { flex: 1; }
+ 
+/* STATS */
+.stats-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+.stat-card { background: #fff; border-radius: 12px; padding: 12px 14px; border: 0.5px solid #c8dfd4; }
+.stat-num { font-size: 26px; font-weight: 500; color: #2D6A4F; }
+.stat-label { font-size: 11px; color: #6B9C84; margin-top: 2px; }
+ 
+/* PATIENT LIST */
+.patient-card { background: #fff; border-radius: 14px; padding: 12px 14px; border: 0.5px solid #c8dfd4; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.patient-card:active { transform: scale(0.98); }
+.avatar { width: 40px; height: 40px; border-radius: 50%; background: #E8F5EE; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; color: #2D6A4F; flex-shrink: 0; }
+.patient-info { flex: 1; }
+.patient-name { font-size: 14px; font-weight: 500; color: #1B4332; }
+.patient-sub { font-size: 11px; color: #6B9C84; margin-top: 1px; }
+.patient-badge { font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+.badge-ok { background: #E8F5EE; color: #2D6A4F; }
+.badge-warn { background: #fef3e2; color: #8a5c00; }
+ 
+/* SCHEDULE */
+.sched-block { background: #fff; border-radius: 14px; padding: 14px; border: 0.5px solid #c8dfd4; margin-bottom: 16px; }
+.cal-row { display: flex; gap: 6px; justify-content: space-between; margin-bottom: 10px; }
+.cal-day { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.cal-day-name { font-size: 10px; color: #6B9C84; text-transform: uppercase; }
+.cal-day-num { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; cursor: pointer; }
+.cal-avail { background: #E8F5EE; color: #2D6A4F; }
+.cal-busy { background: #fef3e2; color: #8a5c00; }
+.cal-full { background: #f0e8e8; color: #c0625a; }
+.cal-today { background: #2D6A4F; color: #fff; }
+.cal-neutral { color: #aaa; }
+.appt-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 0.5px solid #eef4f0; }
+.appt-row:last-child { border-bottom: none; }
+.appt-time { font-size: 12px; font-weight: 500; color: #2D6A4F; width: 48px; flex-shrink: 0; }
+.appt-name { font-size: 13px; color: #1B4332; flex: 1; }
+.appt-actions { display: flex; gap: 8px; }
+.icon-btn { background: none; border: none; cursor: pointer; color: #6B9C84; font-size: 16px; padding: 2px; }
+.icon-btn:hover { color: #2D6A4F; }
+.icon-btn.red:hover { color: #c0625a; }
+ 
+/* DIET MANAGER */
+.diet-patient-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.diet-badge { background: #E8F5EE; color: #2D6A4F; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
+.meal-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 0.5px solid #eef4f0; }
+.meal-row:last-child { border-bottom: none; }
+.meal-dot { width: 8px; height: 8px; border-radius: 50%; background: #2D6A4F; flex-shrink: 0; }
+.meal-dot.alt { background: #95C9A8; }
+.meal-name { font-size: 13px; color: #1B4332; flex: 1; }
+.meal-kcal { font-size: 11px; color: #6B9C84; }
+ 
+/* REPORTS */
+.report-item { background: #fff; border-radius: 12px; padding: 12px 14px; border: 0.5px solid #c8dfd4; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.report-icon { width: 36px; height: 36px; border-radius: 8px; background: #E8F5EE; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.report-icon i { font-size: 18px; color: #2D6A4F; }
+.report-info { flex: 1; }
+.report-name { font-size: 13px; font-weight: 500; color: #1B4332; }
+.report-date { font-size: 11px; color: #6B9C84; }
+.report-actions { display: flex; gap: 6px; }
+ 
+/* SCANNER */
+.scanner-box { background: #fff; border-radius: 14px; padding: 20px 14px; border: 0.5px solid #c8dfd4; text-align: center; margin-bottom: 16px; }
+ 
+/* FEEDBACK ITEM */
+.feedback-item { background: #fff; border-radius: 14px; padding: 12px 14px; border: 0.5px solid #c8dfd4; margin-bottom: 10px; }
+.fb-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+.fb-product { font-size: 13px; font-weight: 500; color: #1B4332; }
+.fb-patient { font-size: 11px; color: #6B9C84; margin-top: 1px; }
+.fb-stars { color: #d4b27a; font-size: 14px; }
+.fb-comment { font-size: 12px; color: #4a7060; margin-top: 6px; font-style: italic; }
+ 
+/* BOTTOM NAV */
+.bottom-nav { background: #fff; border-top: 0.5px solid #c8dfd4; display: flex; justify-content: space-around; padding: 10px 0 8px; position: sticky; bottom: 0; flex-shrink: 0; }
+.nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; min-width: 44px; }
+.nav-item i { font-size: 22px; color: #6B9C84; }
+.nav-item.active i { color: #2D6A4F; }
+.nav-item span { font-size: 10px; color: #6B9C84; }
+.nav-item.active span { color: #2D6A4F; }
+ 
+/* NUTRI RESULT */
+.nutri-result { background: #fff; border-radius: 14px; padding: 14px; border: 0.5px solid #c8dfd4; margin-top: 12px; display: none; }
+.compat-ok { background: #E8F5EE; border-radius: 8px; padding: 8px 10px; font-size: 12px; color: #2D6A4F; margin-top: 10px; }
+ 
+/* PASSWORD STRENGTH */
+.pw-strength { height: 4px; border-radius: 2px; margin-top: 6px; transition: width 0.3s; background: #c8dfd4; }
+.pw-strength-bar { height: 4px; border-radius: 2px; width: 0; transition: width 0.3s, background 0.3s; }
+ 
+/* INLINE BADGE SUCCESS */
+.inline-ok { display: inline-flex; align-items: center; gap: 4px; background: #E8F5EE; border-radius: 20px; padding: 4px 10px; font-size: 12px; color: #2D6A4F; margin-top: 10px; }
+ 
+select.field-input { appearance: none; }
+ 
+/* TABS */
+.tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 8px 12px; font-size: 13px; color: #6B9C84; cursor: pointer; font-family: inherit; white-space: nowrap; }
+.tab-btn.active { color: #2D6A4F; border-bottom-color: #2D6A4F; font-weight: 500; }
