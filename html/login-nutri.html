@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiri — Entrar</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="toast" id="toast"></div>
+
+  <div class="auth-hero">
+    <svg width="44" height="44" viewBox="0 0 60 60" fill="none">
+      <rect x="10" y="22" width="3" height="18" rx="1.5" fill="#F5EFE0"/>
+      <rect x="16" y="18" width="3" height="22" rx="1.5" fill="#F5EFE0"/>
+      <rect x="22" y="20" width="3" height="20" rx="1.5" fill="#F5EFE0"/>
+      <rect x="28" y="18" width="3" height="22" rx="1.5" fill="#F5EFE0"/>
+      <rect x="34" y="22" width="3" height="18" rx="1.5" fill="#F5EFE0"/>
+      <circle cx="42" cy="28" r="10" stroke="#F5EFE0" stroke-width="3" fill="none"/>
+      <line x1="49" y1="35" x2="55" y2="41" stroke="#F5EFE0" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="38" cy="16" r="4" fill="#F5EFE0"/>
+    </svg>
+    <div class="auth-hero-title">Quiri</div>
+    <div class="auth-hero-sub">Área do nutricionista</div>
+  </div>
+
+  <div class="auth-body">
+    <h2>Entrar</h2>
+
+    <div class="field-label">E-mail</div>
+    <input class="field-input" type="email" id="login-email" placeholder="ana@clinica.com.br">
+
+    <div class="field-label">Senha</div>
+    <div style="position:relative;">
+      <input class="field-input" type="password" id="login-senha" placeholder="••••••••" style="padding-right:40px;">
+      <i class="ti ti-eye" id="eyeIcon" onclick="togglePw()" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);cursor:pointer;color:#6B9C84;font-size:18px;"></i>
+    </div>
+    <div class="error-msg" id="err-login">E-mail ou senha incorretos. Verifique e tente novamente.</div>
+
+    <div style="text-align:right;margin-top:8px;">
+      <a href="esqueci-senha.html" style="font-size:12px;color:#2D6A4F;text-decoration:none;">Esqueceu a senha?</a>
+    </div>
+
+    <button class="btn-green" onclick="efetuarLogin()">Entrar</button>
+    <div class="auth-link">Não tem conta? <a href="cadastro.html">Cadastre-se</a></div>
+    <div style="height:24px;"></div>
+  </div>
+</div>
+
+<script>
+function showToast(msg, color) {
+  var t = document.getElementById('toast');
+  t.style.background = color || '#2D6A4F';
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 3000);
+}
+
+function togglePw() {
+  var inp = document.getElementById('login-senha');
+  var icon = document.getElementById('eyeIcon');
+  if (inp.type === 'password') { inp.type = 'text'; icon.className = 'ti ti-eye-off'; }
+  else { inp.type = 'password'; icon.className = 'ti ti-eye'; }
+}
+
+function efetuarLogin() {
+  var email = document.getElementById('login-email').value.trim();
+  var senha = document.getElementById('login-senha').value;
+  var err = document.getElementById('err-login');
+  if (!email || !senha) { showToast('⚠ Preencha e-mail e senha.','#c0625a'); return; }
+  if (email === 'ana@clinica.com.br' && senha === '12345678') {
+    err.classList.remove('show');
+    window.location.href = 'dashboard.html';
+  } else if (email !== '' && senha !== '' && senha.length >= 6) {
+    window.location.href = 'dashboard.html';
+  } else {
+    err.classList.add('show');
+    document.getElementById('login-email').classList.add('error');
+    document.getElementById('login-senha').classList.add('error');
+    showToast('⚠ Erro no login. Verifique seus dados.','#c0625a');
+  }
+}
+</script>
+
+</body>
+</html>
